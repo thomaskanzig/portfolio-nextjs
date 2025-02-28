@@ -1,0 +1,27 @@
+.header {
+    position: relative;
+    width: 100%;
+    background-image: url("../public/img/header_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    &__gradient {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(22 28 45 / .5) !important;
+        z-index: 0;
+    }
+
+    &__container {
+        position: relative;
+        padding: 200px 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    &__profile-picture {
+        border-radius: 50%;
+        border: 5px solid #fff;
+    }
+}

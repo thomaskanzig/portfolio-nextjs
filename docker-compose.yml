@@ -1,0 +1,19 @@
+services:
+
+    node-service:
+        image: node:22.9.0
+        container_name: node-container
+        working_dir: /app
+        command: /bin/sh -c "npm install && npm run dev"
+        volumes:
+            - ./portfolio:/app
+        ports:
+            - "3000:3000"
+
+    playwright-service:
+        image: mcr.microsoft.com/playwright:v1.48.0-focal
+        container_name: playwright-container
+        working_dir: /app
+        command: /bin/sh -c "npm install"
+        volumes:
+            - ./portfolio:/app
