@@ -1,6 +1,7 @@
 .intro {
     position: relative;
     margin-top: -100px;
+    z-index: 1;
 
     &__container {
         border-radius: 20px;

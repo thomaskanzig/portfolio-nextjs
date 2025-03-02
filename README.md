@@ -1,6 +1,8 @@
-# Portfolio Next.js & Bootstrap CSS
+# Portfolio Next.js & Bootstrap
 
-This is a simple portfolio project using Next.js and Bootstrap CSS.
+This is a simple portfolio project using [Next.js](https://nextjs.org) and [Bootstrap](https://getbootstrap.com).  
+
+**Note:** This project is still under development and an official release will be coming soon. 🚧✨  
 
 ![Screenshot of the home page](./screenshots/screenshot_home.jpg)
 
@@ -58,16 +60,10 @@ Or one specific container name:
 docker ps --filter "name=node-container"
 ```
 
+### Environment Variables
 
-## Testing with Playwright
+Create a `.env.local` file in the root project (`portfolio/`) with the following content:
 
-1. Run this command to go into the cypress container:
-```bash
-docker exec -it playwright-container bash
+```dotenv
+NEXT_PUBLIC_API_URL=http://localhost:3000
 ```
-
-2. Initiate all tests with the following command:
-```bash
-root@9917128d5f2f:/app# npx playwright test
-```
-

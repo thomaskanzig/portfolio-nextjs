@@ -1,0 +1,16 @@
+.services {
+    width: 100%;
+    padding: 100px 0 140px;
+
+    &__description {
+        max-width: 600px;
+        font-size: 1rem;
+        margin: 0 auto 2rem;
+        text-align: center;
+    }
+
+    &__card {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+}
