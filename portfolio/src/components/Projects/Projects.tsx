@@ -1,6 +1,6 @@
 import {ReactElement} from "react";
 
-export default function Services (): ReactElement {
+export default function Projects (): ReactElement {
 
    const projects = [
     {

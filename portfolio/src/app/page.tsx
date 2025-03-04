@@ -1,7 +1,7 @@
 import {ReactElement} from "react";
-import Header from "@/app/Header";
-import Intro from "@/app/Intro";
-import Services from "@/app/Services";
+import Header from "@/src/components/Header";
+import Intro from "@/src/components/Intro";
+import Services from "@/src/components/Services";
 
 export default function HomePage (): ReactElement {
   return (

@@ -1,6 +1,6 @@
 import {ReactElement} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {Service} from "@/types/Service";
+import {Service} from "@/src/types/Service";
 import "./services.scss";
 
 export default async function Services (): Promise<ReactElement> {
