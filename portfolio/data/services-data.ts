@@ -1,4 +1,4 @@
-import {Service} from "@/types/Service";
+import {Service} from "@/src/types/Service";
 import {faDesktop, faMobileScreenButton, faScrewdriverWrench} from '@fortawesome/free-solid-svg-icons'
 
 export const services: Service[] = [

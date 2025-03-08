@@ -1,6 +1,6 @@
 import {ReactElement} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {Service} from "@/types/Service";
+import {Service} from "@/src/types/Service";
 import "./services.scss";
 
 export default async function Services (): Promise<ReactElement> {
@@ -10,7 +10,7 @@ export default async function Services (): Promise<ReactElement> {
   return (
       <section className="services">
           <div className="container">
-              <h2 className="text-center">
+              <h2 className="text-center mb-3">
                   Awesome Services
               </h2>
 
@@ -18,7 +18,7 @@ export default async function Services (): Promise<ReactElement> {
                   Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.
               </div>
 
-              <div className="row">
+              <div className="row mt-5">
                   {services.map((service: Service, index: number) => (
                     <div key={index} className="col-md-12 col-lg-4 mb-4 m-lg-0">
                         <div className="card border-0 p-1 rounded-4 services__card">

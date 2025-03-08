@@ -1,0 +1,24 @@
+$nav-transparent: '.navigation--transparent';
+
+.navigation {
+    transition: background-color 0.2s ease-in;
+
+    &#{$nav-transparent} {
+        background: transparent;
+    }
+
+    &__link {
+        font-size: 0.875rem;
+        font-weight: 600;
+
+        #{$nav-transparent} & {
+            color: #FFFFFF;
+        }
+    }
+
+    &__brand {
+        #{$nav-transparent} & {
+            color: #FFFFFF;
+        }
+    }
+}
