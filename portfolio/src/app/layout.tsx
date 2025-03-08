@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "@/src/components/Navbar";
+import Navigation from "@/src/components/Navigation";
 import Footer from "@/src/components/Footer";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import {ReactNode} from "react";
 config.autoAddCss = false
 
 const font = Nunito_Sans({
@@ -20,12 +21,12 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" className="h-100">
       <body className={`${font.className} d-flex flex-column h-100`}>
-        <Navbar />
+        <Navigation />
 
         <main className="flex-shrink-0">
           {children}
